@@ -1,0 +1,53 @@
+/* Demo CSS - You do not need this css in your own slider */
+
+body{
+	font-family: "Open Sans", helvetica, arial;
+	text-align: center;
+}
+
+pre{
+	font-family: "Source Code Pro", monospace;
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: whiteSmoke;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+h1{
+	font-size: 48px;
+}
+
+pre + h2{
+	margin-top: 80px;
+}
+
+div#frame-wrapper{
+	position: relative;
+	width: 960px;
+	height: 480px;
+	margin:0 auto;
+}
+div#frame-wrapper img#logo {
+	position: absolute;
+	z-index: 5;
+	top: 12px;
+	left: 12px;
+}
+div#frame-wrapper img#mask {
+	position: absolute;
+	z-index: 4;
+	top: 0px;
+	left: 0px;	
+}.inline-pre {
+	font-family: "Lucida Console", Monaco, monospace;
+}

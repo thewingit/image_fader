@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/imfade-0.2.js"></script>
+<title>Basic Image Fader Example</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/imfade.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<h1> Essential image fader sample demo </h1>
+    <p>This is a sample demonstration of my code. Feel free to modify for your personal needs!</p>
+    
+	<div id="frame-wrapper">
+        <img id="mask" src="images/mask.png">
+        <img id="logo"src="images/logo.png">
+        <!--  image cycle fader -->
+        <div id="imfade-container">
+            <div id="imfade-images">
+              <img class="active" src="images/view.png">
+              <img src="images/colosseum.png">
+              <img src="images/st_peter.png" title="La basilica di San Pietro">
+              <img src="images/castle.png" title="Castel Sant'Angelo"> 
+              <img src="images/trevi.png" title="Fontana di Trevi"> 
+            </div>
+        </div>
+    </div>
+
+    <p>In order to use this code in your website, the following files are needed:</p>
+    <ul>
+      <li>The javscript file <span class="inline-pre">imfade-0.1.js</span> (you can find it in the &quot;js&quot; folder in the script</li>
+      <li>The css file <span class="inline-pre">imfade.css</span> needed for the correct styling of the html elements</li>
+    </ul>
+    <p>To make the code work properly, just follow this simple steps:</p>
+    <p>1) Add links to the javascript and css files inside the head of your html document:</p>
+    <pre>&lt;script src=&quot;js/imfade-0.1.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;imfade.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;  
+</pre>
+    <p>2) Create a <span class="inline-pre">&lt;div&gt;</span> element inside the body of your html document where you want to put your slideshow. Here is an example on how to properly set-up the slideshow:</p>
+    <pre>&lt;div id=&quot;imfade-container&quot;&gt;<br />            &lt;div id=&quot;imfade-images&quot;&gt;<br />              &lt;img class=&quot;active&quot; src=&quot;images/im01.jpg&quot; title=&quot;This is a caption to the first image.&quot;&gt;<br />              &lt;img src=&quot;images/im02.ipg&quot; title=&quot;This is a caption to the second image.&quot;&gt;<br />              &lt;img src=&quot;images/im03.jpg&quot;&gt;<br />            &lt;/div&gt;<br />            &lt;span&gt;Here goes the very first caption that will be shown only on the first loop.&lt;/span&gt;<br />        &lt;/div&gt;
+    </pre>
+    <p>&nbsp; </p>
+<script>
+	jQuery(document).ready(function($) {
+		jQuery('#imfade-container').imageFader({
+			frameWidth 	: '100%',
+			frameHeight : '480px'
+		});
+	});
+</script>
+</body>
+</html>

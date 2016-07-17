@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+#imfade-container{
+		position:relative;
+}
+#imfade-container #imfade-images{
+		width: inherit;
+		height: inherit;
+}
+#imfade-container img{
+	position:absolute;
+	z-index:1;
+	top: 0px;
+	left: 0px;
+}
+#imfade-container img.active{
+	z-index:3;
+}
+
+#imfade-container #imfade-caption {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 4;
+	overflow: hidden;
+	padding: 0 12px;
+	padding-bottom: 6px;
+/*	background: url(images/spacer.png) repeat;*/
+}
+#imfade-container #imfade-caption span {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	z-index: inherit;
+	white-space: nowrap;
+	font-family: 'Permanent Marker', sans-serif;
+	font-size: 48px;
+	font-weight: 900;
+	color:#FFC;
+	text-shadow: 0 0 2px #666666;
+}
+
+
+@media screen and (max-width: 640px) {
+	#imfade-container #imfade-caption {display: none;}
+	#imfade-container #imfade-images > img {
+		left: 50%;
+		margin-left: -480px;
+	}	
+}
