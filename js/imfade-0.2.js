@@ -38,7 +38,7 @@
 		var $captionFrame	= $wrapper.find('#imfade-caption');
 
             
-        // initialize fader elements
+        // Creates/initializes fader elements
         var init = function() {
 			
 			// sets frame wrapper width and height
@@ -68,6 +68,7 @@
         };
 		
 		
+		// Initializes fader timers
 		var initFader = function() {
 		
 			// check if there is a caption on the first image
